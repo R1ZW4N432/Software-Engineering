@@ -1,5 +1,42 @@
 User Cases
 
+1.	Use Case: Access Population Information 
+Role: User (Journalist, Educator, Policy Maker, City Planner, etc.) Prerequisites: The user obtains system access and authentication. 
+
+- Main Instruction: 
+1. The user chooses whatever kind of population data (countries, cities, capitals, etc.) to view. 
+2. The user enters any filters or requirements (such as area or continent). 
+3. The system uses the given criteria to query the database. 
+4. The system presents the demographic data that was queried in an easy-to-use manner. 
+o Postconditions: The user can obtain the demographic data that was requested for reporting or analysis. 
+o Alternative Flows:  The information you requested is unavailable: The problem is indicated by an error message that the system displays.
+
+2. User Case: Obtain the Top N Most Populated Entities 
+- Role: User 
+-  Prerequisites: The user has indicated the scope (global, continent, region) and 'N'. 
+
+- Main Instruction: 
+1. The user chooses the query's scope (e.g., top N inhabited countries worldwide) and enters the number "N." 
+2. After processing the request, the system searches the database for the top N entities within the given scope, based on population. 
+3. The results are shown by the system in population descent order. 
+o Postconditions: In response to their request, the user is given a list of the top N filled entities. 
+o Alternative Flows: The system returns all entries if 'N' is greater than the total number of entries that are accessible.
+
+3.	User Case: Determine and Assess Language Interpreters 
+-  Role: User 
+o Preconditions: The user is interested in linguistic data and has access to the system. 
+
+- Main Instruction: 
+1. The user chooses to view the system's language speaker statistics. 
+2. The user selects one or more languages (such as Chinese, English, Hindi, Spanish, or Arabic) in which they wish to view the data. 
+3. The system uses the database to collect data across national borders in order to determine the number of speakers for the chosen languages.
+4. . The system determines what proportion of people worldwide speak each of the chosen languages. 
+- The results are ranked from most to least number of speakers by the system, which shows the number of speakers and their proportion of the global population.
+o Postconditions: Accurate language speaker statistics are available to the user. 
+
+- Alternative Flows: The system alerts the user if there is insufficient or no data available for a chosen language.
+
+
  Administrators 
 
 1)	Use Case: Monitor Updates within the Database 
