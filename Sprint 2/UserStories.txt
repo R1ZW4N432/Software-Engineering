@@ -17,32 +17,12 @@ Requirements for satisfaction:
 •  When issues are encountered, give users informative error messages.
 
 
-
-
-
-
 Administrators
 
 -	I must consistently update the database with the most recent demographic data as a database administrator to ensure accuracy.
 It is my responsibility as a system administrator to make sure the system is secure from unauthorised entry. 
 
 -	I have to restrict user access to confidential information within the role as a user manager.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 User Story 2
@@ -60,10 +40,6 @@ Requirements for satisfaction:
 3.	Provide a successful and efficient operation of the sorting and filtering processes: 
 •  Improve sorting and filtering algorithms to effectively handle large amounts of data. 
 •  Test the sorting and filtering functionalities' responsiveness under multiple load of scenarios by doing performance testing.
-
-
-
-
 
 
 User Story 3
