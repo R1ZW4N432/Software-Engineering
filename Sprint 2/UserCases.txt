@@ -1,1 +1,43 @@
+User Cases
+
+ Administrators 
+
+1)	Use Case: Monitor Updates within the Database 
+
+-	Role: Administrator 
+
+-	Preconditions: Administrator has to make updates and has authorised access. 
+
+-	 Main Instruction: 
+
+1. The administrator finds population data that has to be updated or added to the database. 
+
+2. The database administration interface is accessed by the administrator. 
+
+3. The administrator uploads or enters the updated data. 
+
+4. The new data is verified by the system and incorporated into the current dataset. 
+
+5. The system notifies the administrator that the update was successful:
+-	Postconditions: The most recent data is added to the database. 
+-	Alternative Flows: The administrator is alerted and requested to rectify the data if validation checks fail (for example, because of format problems).
+
+
+
+2)	 Use Case Application: Provide System Safety 
+
+-	Role: System Administrator 
+
+-	 Preconditions: The system has to have consitent security updates and evaluations performed. 
+
+-	Main Instruction: 
+1.	The system administrator looks over the security procedures in place and looks for any possible weaknesses. 
+
+2.	. The system administrator upgrades or adds additional security measures. 
+
+3.	 In accordance, the system modifies its security procedures. 
+
+4.	The system records the security update operations:
+-	Postconditions: The security of the system can be maintained or improved.
+-	Alternative Flows:  The system instantly alerts the administrator and starts an emergency protocol in the event that a security breach is discovered.
 
