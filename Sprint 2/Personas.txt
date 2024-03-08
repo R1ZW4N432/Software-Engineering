@@ -1,0 +1,52 @@
+Persona 1  
+Overview:  
+
+- Name: Emily  
+- User Category: Data Analyst  
+- 30 years old  
+- Female gender  
+- Work at the organization as a data analyst  
+- Technology proficiency: high  
+
+Objectives and Assignments:  
+- Objective: To effectively get and evaluate population statistics for reporting needs.  
+- Task: Provide precise and well-structured population reports for various nations and areas.  
+
+Motivations and Anxieties:  
+- Anxieties: Worried about the dependability and correctness of the information contained in the SQL database  
+- Motivations: Driven to enhance data reporting procedures and offer insightful information to the company  
+
+Dissatisfactions and worries:  
+- Dissatisfaction: Dissatisfied with the challenging manual data extraction and processing procedures  
+- Concerns: Worried about the confidentiality and security of data  
+
+Expectations and Needs:  
+-Requirements: Simple access to demographic information for precise reporting  
+-Anticipations: An easy-to-use interface for effectively querying and producing reports  
+
+Persona 2  
+Overview:  
+- Name Alex  
+- User Category: Manager  
+- 45 years old  
+- Male gender  
+- Occupation: Project Manager for the company  
+- Technology proficiency: Moderate  
+
+Objectives and Assignments:  
+- Objective: Applying demographic data for strategic planning and decision-making  
+- Task: Examine population reports to spot patterns and come to wise judgments.  
+
+Motivations and Anxieties:  
+- Anxieties: Concerned about the growth and competitiveness of the company  
+- Motivations: To drive strategic initiatives and enhance outcomes through the utilization of population data.  
+
+Dissatisfactions and worries:  
+- Dissatisfions: Dissatisfied with the delays in obtaining important and accurate demographic data  
+- Concerns: Worried about the company's capacity to maintain an advantage over rivals  
+
+Expectations and Needs:  
+- Requirements: Accurate and timely population reports to aid in decision-making  
+- Anticipations: Population data should be presented in an easily understood way to facilitate interpretation and interpretation.  
+
+ 
