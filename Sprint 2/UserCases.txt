@@ -1,80 +1,132 @@
-User Cases
+Use Cases
+---------
 
-1.	Use Case: Access Population Information 
-Role: User (Journalist, Educator, Policy Maker, City Planner, etc.) Prerequisites: The user obtains system access and authentication. 
-
-- Main Instruction: 
-1. The user chooses whatever kind of population data (countries, cities, capitals, etc.) to view. 
-2. The user enters any filters or requirements (such as area or continent). 
-3. The system uses the given criteria to query the database. 
-4. The system presents the demographic data that was queried in an easy-to-use manner. 
-o Postconditions: The user can obtain the demographic data that was requested for reporting or analysis. 
-o Alternative Flows:  The information you requested is unavailable: The problem is indicated by an error message that the system displays.
-
-2. User Case: Obtain the Top N Most Populated Entities 
-- Role: User 
--  Prerequisites: The user has indicated the scope (global, continent, region) and 'N'. 
-
-- Main Instruction: 
-1. The user chooses the query's scope (e.g., top N inhabited countries worldwide) and enters the number "N." 
-2. After processing the request, the system searches the database for the top N entities within the given scope, based on population. 
-3. The results are shown by the system in population descent order. 
-o Postconditions: In response to their request, the user is given a list of the top N filled entities. 
-o Alternative Flows: The system returns all entries if 'N' is greater than the total number of entries that are accessible.
-
-3.	User Case: Determine and Assess Language Interpreters 
--  Role: User 
-o Preconditions: The user is interested in linguistic data and has access to the system. 
-
-- Main Instruction: 
-1. The user chooses to view the system's language speaker statistics. 
-2. The user selects one or more languages (such as Chinese, English, Hindi, Spanish, or Arabic) in which they wish to view the data. 
-3. The system uses the database to collect data across national borders in order to determine the number of speakers for the chosen languages.
-4. . The system determines what proportion of people worldwide speak each of the chosen languages. 
-- The results are ranked from most to least number of speakers by the system, which shows the number of speakers and their proportion of the global population.
-o Postconditions: Accurate language speaker statistics are available to the user. 
-
-- Alternative Flows: The system alerts the user if there is insufficient or no data available for a chosen language.
+1. View Population Reports
+------
+Actor: 
+General User (Maria, Alex, Ethan, Sara)
+------------
+Description: 
+Users can view various population reports, including world, continent, region, country, and city populations.
+------
+Steps:
+The user selects the type of report they want to view (e.g., world population, continent population).
+The system displays the report based on the latest available data.
+---------------
+Postconditions:
+The report is displayed to the user, including all relevant population data according to the selected criteria.
+-----------------
+Alternative Flow:
+If the requested data is unavailable or the system encounters an error, the user is notified of the issue and provided with suggestions for alternative actions (e.g., selecting a different report type or retrying the operation).
 
 
- Administrators 
+2. Sort and Filter Population Data
+------
+Actor:
+General User (Maria, Alex, Ethan, Sara)
+------------
+Description: 
+Users can sort and filter population data by size, region, and other criteria.
+------
+Steps:
+The user chooses criteria for sorting and filtering (e.g., largest to smallest population).
+The system updates the display to reflect the user's selections.
+---------------
+Postconditions:
+The displayed population data is updated to reflect the applied sorting and filtering criteria.
+-----------------
+Alternative Flow:
+If no data matches the filtering criteria, the system displays a message indicating that no results were found and suggests modifying the filter criteria.
 
-1)	Use Case: Monitor Updates within the Database 
-
--	Role: Administrator 
-
--	Preconditions: Administrator has to make updates and has authorised access. 
-
--	 Main Instruction: 
-
-1. The administrator finds population data that has to be updated or added to the database. 
-
-2. The database administration interface is accessed by the administrator. 
-
-3. The administrator uploads or enters the updated data. 
-
-4. The new data is verified by the system and incorporated into the current dataset. 
-
-5. The system notifies the administrator that the update was successful:
--	Postconditions: The most recent data is added to the database. 
--	Alternative Flows: The administrator is alerted and requested to rectify the data if validation checks fail (for example, because of format problems).
+3. Access Language Distribution Data
+------
+Actor: 
+Geography Teacher (Maria), Public Health Nurse (Alex)
+------------
+Description:
+Users can access information on the distribution of speakers of major world languages.
+------
+Steps:
+The user selects the language distribution report option.
+The system provides data on the number of speakers and their percentage of the world population.
+---------------
+Postconditions:
+The system displays the report on language distribution, including the number of speakers and their percentage of the world population for the selected languages.
+-----------------
+Alternative Flow:
+If data on the selected languages is incomplete or unavailable, the system informs the user and may offer data on other languages or suggest revising the selection.
 
 
+4. Update Database
+------
+Actor: 
+Admin/User with permissions
+------------
+Description: 
+Authorized users can add new information or update existing data in the database.
+------
+Steps:
+The user enters or uploads new data into the system.
+The system validates and updates the database accordingly.
+---------------
+Postconditions:
+The database is updated with the new or modified data, maintaining its integrity and accuracy.
+-----------------
+Alternative Flow:
+If the data entry is invalid or fails validation checks, the system rejects the update, notifies the user of the error, and provides guidelines for valid data entry.
 
-2)	 Use Case Application: Provide System Safety 
+5. Generate Custom Reports
+------
+Actor: 
+General User (Maria, Alex, Ethan, Sara)
+------------
+Description: 
+Users can generate custom reports based on specific criteria, such as top N populated cities or countries.
+------
+Steps:
+The user specifies the criteria for the custom report (e.g., top 10 populated cities in Europe).
+The system generates and displays the report based on the user's input.
+---------------
+Postconditions:
+The system generates and displays a custom report based on the user-defined criteria, such as the top N populated cities or countries.
+-----------------
+Alternative Flow:
+If the criteria specified by the user result in no matching data, the system alerts the user and suggests adjusting the criteria for better results.
 
--	Role: System Administrator 
+6. View Historical Population Trends
+------
+Actor: 
+Genealogy Enthusiast (Sara)
+------------
+Description: 
+Users interested in historical data can view population trends over time for specific regions, countries, or cities.
+------
+Steps:
+The user selects the region, country, or city and the time frame of interest.
+The system displays population trends over the selected period.
+---------------
+Postconditions:
+The system displays population trends over the selected time frame for the chosen region, country, or city.
+-----------------
+Alternative Flow:
+If historical data for the selected area and time frame is not available, the user is informed and may be prompted to select a different area or time frame.
 
--	 Preconditions: The system has to have consitent security updates and evaluations performed. 
+7. Access and Display Urban vs. Rural Population Data
+------
+Actor:
+Public Health Nurse (Alex)
+------------
+Description: 
+Users can access data on the distribution of populations in urban and rural areas.
+------
+Steps:
+The user selects the option to view urban vs. rural population data.
+The system presents the data, including percentages and total population figures.
+---------------
+Postconditions:
+The system presents the urban vs. rural population data, including percentages and total population figures for the selected area.
+-----------------
+Alternative Flow:
+If the system does not have detailed urban vs. rural data for the selected area, it notifies the user and may offer aggregate population data or data for adjacent areas.
 
--	Main Instruction: 
-1.	The system administrator looks over the security procedures in place and looks for any possible weaknesses. 
-
-2.	. The system administrator upgrades or adds additional security measures. 
-
-3.	 In accordance, the system modifies its security procedures. 
-
-4.	The system records the security update operations:
--	Postconditions: The security of the system can be maintained or improved.
--	Alternative Flows:  The system instantly alerts the administrator and starts an emergency protocol in the event that a security breach is discovered.
 
