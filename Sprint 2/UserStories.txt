@@ -1,85 +1,68 @@
-User Cases
+User Story 1: Maria, The High School Geography Teacher
 
-User Story 1
-I can conduct demographic analysis and reporting as a data analyst by retrieving population data for countries, continents, regions, cities, districts, and capital cities.
-Requirements for satisfaction:
-1.	Use a database query to get population statistics for entities: 
-•  Verify that the SQL queries used to retrieve population data from the supplied database tables are properly generated.
-•  Confirm that population projections for countries, continents, regions, cities, districts, and capital cities are included in the data that was retrieved.
+As a high school geography teacher,
+I want to easily access and present up-to-date global and regional population data during my lessons
+So that I can make my geography classes more engaging and informative, helping students understand the dynamics of population growth, urbanization and the distribution of languages.
 
-2.	 Ensure that current and accurate population data is retrieved: 
-•  Confirm that the population data is accurate and up to date.
-•  Put in place systems to update population statistics in the event that the database changes. 
+ 
 
+Acceptance Criteria:
 
-3.	Address errors effectively when there are incorrect inputs or problems with database connectivity: 
-•  Put error handling procedures in place to deal with situations like incorrect input parameters or unsuccessful database connections. 
-•  When issues are encountered, give users informative error messages.
+The system allows for quick retrieval of the current population data of countries, cities, and capitals.
+Data can be displayed in a user-friendly format suitable for classroom presentations.
+The system allows population trends to be compared over time to illustrate demographic changes.
+ 
 
+ 
 
-Administrators
+User Story 2: Alex, The Public Health Nurse
 
--	I must consistently update the database with the most recent demographic data as a database administrator to ensure accuracy.
-It is my responsibility as a system administrator to make sure the system is secure from unauthorised entry. 
+As a public health nurse,
+I want to access detailed population data for various regions and cities, including information on urban vs rural population distribution,
+So that I can better plan health interventions, allocate resources more efficiently, and tailor public health campaigns to the specific needs of communities.
 
--	I have to restrict user access to confidential information within the role as a user manager.
+ 
 
+Acceptance Criteria:
 
-User Story 2
+The system offers detailed demographic data for effective health planning, including urban and rural distribution.
+The platform allows for analysing population trends necessary for predicting future healthcare needs.
+Data related to the most spoken languages in each area are available for producing health education materials in the appropriate languages.
+ 
 
-In order to examine population trends using multiple geographic characteristics, I, as a researcher, I am able to sort and filter population data according to several criteria, including continent, region, country, and district.
-Requirements for satisfaction:
-1.	 Use sorting functionality to put population-based data in either ascending or descending order: 
-•  Enable users to choose the preferred sorting order for population data, such as ascending or descending.
-•  Confirm that the sorting process correctly rearranges population data according to the given criteria. 
+ 
 
-2.	Offer filtering choices to limit population data according to predetermined standards: 
-•  To allow users to concentrate on particular geographic locations, include filters for continent, region, country, and district. 
-•  Verify that population data related to chosen criteria is successfully retrieved and shown by filtering processes. 
+User Story 3: Ethan, The Travel Blogger
 
-3.	Provide a successful and efficient operation of the sorting and filtering processes: 
-•  Improve sorting and filtering algorithms to effectively handle large amounts of data. 
-•  Test the sorting and filtering functionalities' responsiveness under multiple load of scenarios by doing performance testing.
+As a travel blogger focusing on cultural and urban experiences,
+I want to access current population information and trends for cities around the world
+So that I can provide my readers with insights into the most vibrant and populous cities to visit, including detailed guides on exploring capitals and discovering the charm of less-populated areas.
 
+ 
 
-User Story 3
+Acceptance Criteria:
 
-As an educator, I can adjust my population examination to meet certain needs by entering a number (N) to obtain the top 'N' populated entities (cities, capital cities, and countries).
-Requirements for satisfaction:
-1.	Take in the input from the user for "N" and verify that it is a positive integer: 
-Verify the user's input to make sure it falls inside a suitable range and is a positive integer.
-• If input validation is unsuccessful, advise users with feedback so they can enter a valid 'N' value. 
+The system provides an easy way to find the population sizes of cities, including capitals, organized by most significant to most minor.
+It allows quick access to data on the top populated cities worldwide or within specific continents or regions, catering to user input for personalized queries.
+The platform offers insights into city populations to help craft engaging content that appeals to urban explorers and cultural enthusiasts in the blog's audience.
+ 
 
-2.	Based on user input, get and show the top 'N' filled entities: 
-The database will be accessed to retrieve the top 'N' inhabited entities according to predetermined criteria, such as countries, cities, and capital cities. 
-•  Clearly and neatly display the retrieved data, showing the population of each object.
+ 
 
-3.	Deal with edge conditions, such as when 'N' exceeds the entire number of entities that are available: 
-•  Develop procedures to deal with situations in which the requested 'N' is greater than the total number of entities that are accessible.
-•  In the event that users run into these edge conditions, send them the correct message.
+User Story 4: Sara, The Genealogy Enthusiast
 
-Postconditions: In response to their request, the user is given a list of the top N filled entities. 
+As a genealogy enthusiast working on tracing my family history,
+I want to access detailed population information on cities and districts from various countries
+So that I can better understand the regions where my ancestors lived, including how populous those areas were historically and how they have grown or changed over time.
 
-Alternative Flows: The system returns all entries if 'N' is greater than the total number of entries that are accessible.
+ 
 
+Acceptance Criteria:
 
-User Story 4
-
-In order to analyse the distribution of languages across the globe, as a demographic analyst, I am able to obtain population statistics for speakers of particular languages, like Chinese, English, Hindi, Spanish, and Arabic.
-Requirements for satisfaction:
-1.	Use a database query to get population statistics for speakers of particular languages: 
-• Create SQL queries to retrieve demographic information for individuals who speak those languages (English, Hindi, Chinese, Spanish, Arabic).
-• Verify that the mapping of language data to related population figures is accurate.
-
-2.	Determine what proportion of people around the World speak each language: 
-Determine the proportion of the global population that speaks each language. 
-•  Verify the accuracy of the percentage figures by taking the entire global population into account. 
-
-
-3.	Display language population data with speakers arranged in decreasing order: 
-•  Sort language population data according to the quantity of speakers in each language. 
-• For simplified analysis, present language population statistics in a visually engaging and understandable format.
-
+The system allows users to search for population data of cities and districts within specific countries, aiding in genealogical research.
+It provides historical population trends where available to give users a sense of how an area has developed over the years.
+The user-friendly platform enables enthusiasts with varying levels of technical expertise to navigate and extract meaningful information efficiently.
+ 
 
 
 
