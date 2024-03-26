@@ -1,1 +1,22 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/node:lts  # Using the LTS version of Node.js
+    working_directory: ~/project  # Default working directory where CircleCI checks out your code
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: Run Tests
+          command: npm test  # Adjust or add commands based on your project's setup
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - build
 
