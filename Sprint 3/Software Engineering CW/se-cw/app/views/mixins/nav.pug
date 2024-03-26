@@ -1,0 +1,8 @@
+mixin navigation(activePage)
+  nav
+    a(href="/" class=(activePage === 'home' ? 'active' : '')) 
+      b World Populations Hub
+    a(href="/countries" class=(activePage === 'countries' ? 'active' : '')) Countries
+    a(href="/cities" class=(activePage === 'cities' ? 'active' : '')) Cities
+    a(href="/capital-cities" class=(activePage === 'capital-cities' ? 'active' : '')) Capital Cities
+    a(href="/language" class=(activePage === 'language' ? 'active' : '')) Language Insights

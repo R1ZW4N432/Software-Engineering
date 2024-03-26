@@ -1,0 +1,33 @@
+extends layout.pug
+
+block head
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css")
+
+block content
+  header.welcome-banner
+    h1 Welcome to the World Population Hub
+    p This site provides comprehensive data and reports on global population statistics, including countries, cities, languages, and more.
+
+  section.information-resources
+    h2 Information and Resources
+    .guides
+      h3 How-To Guides
+      p Learn how to navigate our site and interpret the vast amount of data available with our easy-to-follow guides.
+    .faq
+      h3 FAQ
+      p Have questions? Check out our FAQ section for answers to common questions about our data and reports.
+
+  footer.footer
+    .contact-info
+      h3 Contact Us
+      p Email: info@populationdata.org
+      p Phone: (123) 456-7890
+      p Address: 123 Main St, City, Country
+    .legal-info
+      a(href="#") Privacy Policy
+      a(href="#") Terms of Use
+      a(href="#") Copyright Notices
+    .social-media-links
+      a(href="#" class="fa fa-facebook")
+      a(href="#" class="fa fa-twitter")
+      a(href="#" class="fa fa-linkedin")

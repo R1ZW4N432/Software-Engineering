@@ -1,0 +1,14 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.7.0
+
+jobs:
+  build:
+    working_directory: ~/se-cw/app
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout:
+          path: ~/se-cw
+      - run: npm install
