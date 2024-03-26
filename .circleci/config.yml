@@ -5,7 +5,7 @@ orbs:
 
 jobs:
   build:
-    working_directory: Sprint 3/Software Engineering CW/se-cw/app
+    working_directory: Sprint 3/Software Engineering CW/se-cw
     docker:
       - image: cimg/node:lts
     steps:
