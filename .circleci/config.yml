@@ -11,4 +11,4 @@ jobs:
     steps:
       - checkout:
           path: Sprint_3/Software Engineering CW
-      - run: npm install -g supervisor && npm install && npm install supervisor
+      - run: npm install
