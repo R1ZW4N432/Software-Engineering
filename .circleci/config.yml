@@ -11,4 +11,4 @@ jobs:
     steps:
       - checkout:
           path: ~/Software-Engineering/Sprint_3
-      - run: npm install
+      - run: npm insta
