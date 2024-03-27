@@ -5,10 +5,10 @@ orbs:
 
 jobs:
   build:
-    working_directory: Sprint 3/Software Engineering CW/se-cw
+    working_directory: Sprint_3/Software Engineering CW/se-cw
     docker:
       - image: cimg/node:lts
     steps:
       - checkout:
-          path: Sprint 3/Software Engineering CW
+          path: Sprint_3/Software Engineering CW
       - run: npm install
