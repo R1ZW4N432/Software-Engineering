@@ -1,0 +1,58 @@
+extends layout.pug
+
+block head
+    link(rel="stylesheet", href="/countries.css")
+
+block content
+    h2 Countries
+
+
+
+    // Form for filtering countries
+    form(action="/countries", method="get")
+        .filters
+            div
+                label(for="continent") Continent:
+                select(name="continent" id="continent-select")
+                    option(value="" disabled selected) Select a Continent
+                    option(value="All Continents" selected) All Continents
+                    option(value="Asia") Asia
+                    option(value="Europe") Europe
+                    option(value="Africa") Africa
+                    option(value="Oceania") Oceania
+                    option(value="North America") North America
+                    option(value="South America") South America
+                    option(value="Antarctica") Antarctica
+
+            div
+                label(for="region") Region:
+                select(name="region" id="region-select")
+                    option(value="" disabled selected) Select a Region
+                    option(value="All Regions") All Regions
+                    
+            div.top-n-countries
+                label(for="n") Top N Countries:
+                input(type="number", name="n", min="0", placeholder="Enter a number")
+
+            button(type="submit") Filter Countries
+
+    table
+        thead
+            th.text-center 🏴
+            th.text-center Country
+            th.text-center Continent
+            th.text-center Region
+            th.text-center Capital ID
+            th.text-center Population
+        tbody
+            each row in rows
+                tr
+                    td.text-center #{row.Code}
+                    td.fit.text-center #{row.Name}
+                    td.fit.text-center #{row.Continent}
+                    td.text-center #{row.Region}
+                    td.text-center #{row.Capital}
+                    - const population = new Intl.NumberFormat().format(row.Population)
+                    td.fit.text-center #{population}
+
+    script(src="/js/countryfilter.js")
