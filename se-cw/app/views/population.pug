@@ -1,0 +1,81 @@
+extends layout.pug
+
+block head
+  link(rel="stylesheet", href="/population.css")
+
+block content
+    h2 World Population Reports
+
+    h3 By Continent
+    table
+        thead
+        tr
+            th.text-center Continent
+            th.text-center Total Population
+            th.text-center Capital Population
+            th.text-center City Population
+            th.text-center Non-City Population
+            th.text-center Capital Population %
+            th.text-center City Population %
+            th.text-center Non-City Population %
+        tbody
+        each continent in continents
+            tr
+            td.text-center #{continent.Continent}
+            td.text-center #{continent.TotalPopulation}
+            td.text-center #{continent.CapitalPopulation}
+            td.text-center #{continent.CityPopulation}
+            td.text-center #{continent.NonCityPopulation}
+            td.text-center #{continent.CapitalPopulationPercentage}%
+            td.text-center #{continent.CityPopulationPercentage}%
+            td.text-center #{continent.NonCityPopulationPercentage}%
+
+    h3 By Region
+    table
+        thead
+        tr
+            th.text-center Region
+            th.text-center Total Population
+            th.text-center Capital Population
+            th.text-center City Population
+            th.text-center Non-City Population
+            th.text-center Capital Population %
+            th.text-center City Population %
+            th.text-center Non-City Population %
+        tbody
+        each region in regions
+            tr
+            td.text-center #{region.Region}
+            td.text-center #{region.TotalPopulation}
+            td.text-center #{region.CapitalPopulation}
+            td.text-center #{region.CityPopulation}
+            td.text-center #{region.NonCityPopulation}
+            td.text-center #{region.CapitalPopulationPercentage}%
+            td.text-center #{region.CityPopulationPercentage}%
+            td.text-center #{region.NonCityPopulationPercentage}%
+
+    h3 By Country
+    table
+        thead
+        tr
+            th.text-center Country
+            th.text-center Total Population
+            th.text-center Capital Population
+            th.text-center City Population
+            th.text-center Non-City Population
+            th.text-center Capital Population %
+            th.text-center City Population %
+            th.text-center Non-City Population %
+        tbody
+        each country in countries
+            tr
+            td.text-center #{country.CountryName}
+            td.text-center #{country.TotalPopulation}
+            td.text-center #{country.CapitalPopulation}
+            td.text-center #{country.CityPopulation}
+            td.text-center #{country.NonCityPopulation}
+            td.text-center #{country.CapitalPopulationPercentage}%
+            td.text-center #{country.CityPopulationPercentage}%
+            td.text-center #{country.NonCityPopulationPercentage}%
+
+    script(src="/js/population.js")

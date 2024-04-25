@@ -1,0 +1,65 @@
+extends layout.pug 
+
+block head 
+    link(rel="stylesheet", href="/capital.css")
+
+block content 
+    h2 Capital Cities 
+
+
+    // Form for filtering capital cities
+    form(action="/capital-cities", method="get")
+        .filters
+            div
+                label(for="continent") Continent:
+                select(name="continent" id="continent-select")
+                    option(value="" disabled selected) Select a Continent
+                    option(value="All Continents" selected) All Continents
+                    option(value="Asia") Asia
+                    option(value="Europe") Europe
+                    option(value="Africa") Africa
+                    option(value="Oceania") Oceania
+                    option(value="North America") North America
+                    option(value="South America") South America
+                    option(value="Antarctica") Antarctica
+
+            div
+                label(for="region") Region:
+                select(name="region" id="region-select")
+                    option(value="" disabled selected) Select a Region
+                    option(value="All Regions") All Regions
+            
+            div.country
+                label(for="country") Country:
+                input(type="text", name="country", placeholder="Enter country name")
+                    
+            div.top-n-capital
+                label(for="n") Top N Capital Cities:
+                input(type="number", name="n", min="0", placeholder="Enter a number")
+
+            button(type="submit") Filter Capitals
+
+    table 
+        thead
+            th.text-center ID
+            th.text-center 🏴
+            th.text-center Continent
+            th.text-center Region
+            th.text-center Country
+            th.text-center Capital City
+            th.text-center Population 
+        tbody 
+            each row in rows 
+                tr 
+                    td.text-center #{row.ID}
+                    td.fit.text-center
+                        a(href=`/country/${row.CountryCode}`) #{row.CountryCode}
+                    td.fit.text-center #{row.Continent}
+                    td.text-center #{row.Region}
+                    td.text-center #{row.Country}
+                    td.fit.text-center #{row.Name}
+                    - const population = new Intl.NumberFormat().format(row.Population)
+                    td.fit.text-center #{population}
+
+
+    script(src="/js/capitalfilter.js")

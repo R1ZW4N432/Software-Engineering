@@ -1,0 +1,77 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h2, h3 {
+    font-weight: bold;
+    color: #000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #00adba;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th.text-center, td.text-center {
+    text-align: center;
+}
+
+.number {
+    text-align: right;
+}
+
+.fit {
+    white-space: nowrap;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

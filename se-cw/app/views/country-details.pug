@@ -1,0 +1,41 @@
+extends layout.pug
+
+block head
+    link(rel="stylesheet", href="/country-details.css")
+
+block content
+    h2 Country Details for #{country.Name}
+
+    h3 Information
+    table
+        thead
+        tr
+            th.text-center Continent
+            th.text-center Region
+            th.text-center Capital
+            th.text-center Official Language
+            th.text-center Continent Population
+            th.text-center Capital Population
+        tbody
+            tr
+                td.text-center #{countrydetails.Continent}
+                td.text-center #{countrydetails.Region}
+                td.text-center #{countrydetails.Capital}
+                td.text-center #{countrydetails.OfficialLanguage}
+                td.text-center #{new Intl.NumberFormat().format(countrydetails.ContinentPopulation)}
+                td.text-center #{new Intl.NumberFormat().format(countrydetails.CapitalPopulation)}
+
+    h3 Cities
+    table 
+        thead
+            th.text-center ID
+            th.text-center City Name
+            th.text-center District
+            th.text-center Population
+        tbody
+            each city in cities
+                tr
+                    td.text-center #{city.ID}
+                    td.text-center #{city.Name}
+                    td.text-center #{city.District}
+                    td.text-center #{new Intl.NumberFormat().format(city.Population)}
