@@ -1,1 +1,131 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background: #000000;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Sidebar Styles */
+  aside {
+    width: 30%;
+    background: #e4e4e4;
+    padding: 20px;
+  }
+  
+  /* Article (Content Area) Styles */
+  article {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  /* Tables Styles for City Information */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #00adba;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .main-content, nav ul, aside {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav ul li, article, aside {
+      margin: 10px 0;
+    }
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  .number {
+    text-align: right;
+  }
+  .fit {
+    white-space: nowrap;
+  }
 
