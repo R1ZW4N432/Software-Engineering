@@ -1,1 +1,23 @@
+extends layout.pug 
+
+block head 
+    link(rel="stylesheet", href="/language.css")
+
+block content 
+    h2 Language Insights 
+    table 
+        thead
+            th.text-center 🏴
+            th.text-center Language
+            th.text-center Is Official 
+            th.text-center Percentage %
+        tbody 
+            each row in rows 
+                tr 
+                    td.text-center #{row.Code}
+                    td.fit.text-center #{row.Language}
+                    td.fit.text-center #{row.IsOfficial}
+                    - const percentage = new Intl.NumberFormat().format(row.Percentage)
+                    td.fit.text-center #{percentage}
+
 
