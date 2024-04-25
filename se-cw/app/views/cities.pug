@@ -1,1 +1,39 @@
+extends layout.pug 
+
+block head 
+    link(rel="stylesheet", href="/cities.css")
+
+block content 
+    h2 Cities 
+
+    // Form for filtering countries
+    form(action="/cities", method="get")
+        .filters
+            div.district
+                label(for="district") District:
+                input(type="text", name="district", placeholder="Enter district name")
+
+            div.top-n-countries
+                label(for="n") Top N Cities:
+                input(type="number", name="n", min="0", placeholder="Enter a number")
+
+            button(type="submit") Filter Cities
+
+    table 
+        thead
+            th.text-center ID
+            th.text-center 🏴
+            th.text-center City 
+            th.text-center District
+            th.text-center Population 
+        tbody 
+            each row in rows 
+                tr 
+                    td.text-center #{row.ID}
+                    td.fit.text-center #{row.CountryCode}
+                    td.fit.text-center #{row.Name}
+                    td.text-center #{row.District}
+                    - const population = new Intl.NumberFormat().format(row.Population)
+                    td.fit.text-center #{population}
+
 
